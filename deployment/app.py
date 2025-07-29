@@ -2,7 +2,7 @@ import streamlit as st
 import EDA
 import prediction
 
-page = st.sidebar.selectbox('Pilih Halaman :', ('EDA', 'Predict Taxi Price'))
+page = st.selectbox('Navigate To :', ('EDA', 'Predict Taxi Price'))
 
 if page == 'EDA':
     EDA.run()
